@@ -9,7 +9,7 @@ use Illuminate\Http\JsonResponse;
 class ClientController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the clients.
      */
     public function index(): JsonResponse
     {
@@ -21,7 +21,7 @@ class ClientController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a new client.
      */
     public function store(Request $request): JsonResponse
     {
