@@ -13,7 +13,7 @@ class ClientController extends Controller
      */
     public function index(): JsonResponse
     {
-        $clients = Client::with('bookings')->get();
+        $clients = Client::with('bookings')->paginate(10);
 
         return response()->json([
             'data' => $clients,
