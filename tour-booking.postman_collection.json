@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "d75a26d8-b6ab-4ace-b869-a8d8dd76fb52",
+		"name": "tour-booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Get clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "Dusan",
+									"type": "default"
+								},
+								{
+									"key": "last_name",
+									"value": "Mitrovic",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "example@example.com",
+									"type": "default"
+								},
+								{
+									"key": "passport_num",
+									"value": "1234567890",
+									"type": "default"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Get bookings",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "product_id",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/bookings",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
