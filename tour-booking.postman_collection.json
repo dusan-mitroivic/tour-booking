@@ -109,7 +109,18 @@
 					"name": "Get bookings",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/bookings",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
 					},
 					"response": []
 				},
